@@ -28,27 +28,47 @@ Eksperimen akan dilakukan menggunakan perintah dasar Linux untuk melihat informa
 ---
 
 ## Langkah Praktikum
-1. **Fork Repository**
-   - Mahasiswa melakukan *fork* dari repositori utama `so-202501`.
-   - Setiap mahasiswa wajib memiliki repositori individu pada akun GitHub masing-masing.
+1. **Setup Environment**
+   - Pastikan Linux (Ubuntu/WSL) sudah terinstal.
+   - Pastikan Git sudah dikonfigurasi dengan benar:
+     ```bash
+     git config --global user.name "Nama Anda"
+     git config --global user.email "email@contoh.com"
+     ```
 
-2. **Struktur Folder**
-   - `docs/` → panduan & modul tiap pertemuan.
-   - `praktikum/weekX-*` → artefak mingguan (kode, log, screenshot, laporan singkat).
-   - `report/` → laporan bertumbuh (IMRaD) hingga final.
-   - `scripts/`, `results/`, `vm/`, `docker/` → digunakan sesuai kebutuhan praktikum.
+2. **Diskusi Konsep**
+   - Baca materi pengantar tentang komponen OS.
+   - Identifikasi komponen yang ada pada Linux/Windows/Android.
 
-3. **Alur Pengerjaan**
-   - Setiap minggu mahasiswa membaca panduan di `docs/`.
-   - Melakukan praktik, menyimpan hasil di folder `praktikum/weekX-*`.
-   - Menulis laporan singkat (`laporan.md`) di dalam folder minggu tersebut.
-   - Menambahkan bukti (screenshot, log, konfigurasi) ke folder yang sesuai.
+3. **Eksperimen Dasar**
+   Jalankan perintah berikut di terminal:
+   ```bash
+   uname -a
+   whoami
+   lsmod | head
+   dmesg | head
+   ```
+   Catat dan analisis modul kernel yang tampil.
 
-4. **Pengumpulan**
-   - Setiap pertemuan, mahasiswa melakukan **commit & push** ke repositori masing-masing.
-   - Dosen/Asisten akan melakukan pemeriksaan melalui GitHub.
-   - Deadline pengumpulan: **maksimal W+2 setelah pertemuan praktikum**.
-   - Keterlambatan akan dikenakan pengurangan nilai.
+4. **Membuat Diagram Arsitektur**
+   - Buat diagram hubungan antara *User → System Call → Kernel → Hardware.*
+   - Gunakan **draw.io** atau **Mermaid**.
+   - Simpan hasilnya di:
+     ```
+     praktikum/week1-intro-arsitektur-os/screenshots/diagram-os.png
+     ```
+
+5. **Penulisan Laporan**
+   - Tuliskan hasil pengamatan, analisis, dan kesimpulan ke dalam `laporan.md`.
+   - Tambahkan screenshot hasil terminal ke folder `screenshots/`.
+
+6. **Commit & Push**
+   ```bash
+   git add .
+   git commit -m "Minggu 1 - Arsitektur Sistem Operasi dan Kernel"
+   git push origin main
+   ```
+
 ---
 
 ## Kode / Perintah
