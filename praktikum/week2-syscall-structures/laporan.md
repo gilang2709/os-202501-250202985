@@ -150,6 +150,7 @@ Tuliskan secara singkat:
 
    **Kesusahan menginstal Linux karena setiap kali akan mengetik perintah selalu langsung keluar dari Linux tersebut.**  
 - Bagaimana cara Anda mengatasinya?
+- 
   **menggunakan Cloud Shell: https://shell.cloud.google.com/**  
 
 ---
