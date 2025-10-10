@@ -121,8 +121,8 @@ Sertakan screenshot hasil percobaan atau diagram:
 
       * Misalnya, lsmod (User Space) membaca data dari struktur data internal Kernel (/proc/modules yang dihasilkan Kernel Space). Interaksi ini menunjukkan bagaimana User Space meminta informasi yang dikelola oleh Kernel Space.
 
-
-
+3. Apa perbedaan hasil di lingkungan Os berbeda(Linux vs Windows)
+   * Linux fokus pada kesederhanaan dan konsistensi menggunakan nomor , sementara Windows fokus pada kontrol dan struktur menggunakan tiket objek kompleks.
 
 ---
 
