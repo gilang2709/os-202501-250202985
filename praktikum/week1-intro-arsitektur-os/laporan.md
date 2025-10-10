@@ -84,7 +84,7 @@ dmesg | head
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](./screenshots/sreenshot%20linux.png)
+![Screenshot hasil](./screenshots/screenshots%20linux%20minggu%201.png)
 
 ---
 
