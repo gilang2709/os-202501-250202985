@@ -89,7 +89,11 @@ dmesg | tail -n 10
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](screenshots/example.png)
+![Screenshot hasil](./screenshots/strace%20ls.png)
+![Screenshot hasil](./screenshots/strace%20-e%20trace=open,read,write,close%20cat%20etcpasswd.png)
+![Screenshot hasil](./screenshots/dmesg%20%20tail%20-n%2010.png)
+
+
 
 ---
 
@@ -103,30 +107,50 @@ Sertakan screenshot hasil percobaan atau diagram:
 
   * dmesg | tail -n 10 berfungsi untuk menampilkan sepuluh baris terakhir dari log kernel sistem (Kernel Ring Buffer).
   
-- Hubungkan hasil dengan teori (fungsi kernel, system call, arsitektur OS).  
+- Hubungkan hasil dengan teori (fungsi kernel, system call, arsitektur OS). 
+  * strace menampilkan aktivitas di User Mode saat program meminta layanan.
+
+  * dmesg menampilkan hasil kerja dan status di Kernel Mode yang merupakan respons dari aktivitas tersebut.  
+
 - Apa perbedaan hasil di lingkungan OS berbeda (Linux vs Windows)?  
+  * Perbedaan (Linux vs Windows) tidak terletak pada hasil fungsionalnya, melainkan pada mekanisme internal, bahasa pemrograman sistem, dan objek yang digunakan untuk merepresentasikan sumber daya.
 
 ---
 
 ## Kesimpulan
-Tuliskan 2–3 poin kesimpulan dari praktikum ini.
+**Praktikum ini bertujuan agar mahasiswa memahami pemisahan mode eksekusi (User vs. Kernel). User program adalah pemohon, dan kernel adalah pelaksana.**
 
 ---
 
 ## Quiz
-1. [Pertanyaan 1]  
-   **Jawaban:**  
-2. [Pertanyaan 2]  
-   **Jawaban:**  
-3. [Pertanyaan 3]  
-   **Jawaban:**  
+1. Apa fungsi utama system call dalam sistem operasi?    
+   **Jawaban:**
 
+   **Fungsi utama System Call adalah jembatan yang membuat OS dapat menjalankan aplikasi pengguna tanpa menyerahkan kendali penuh atau mengorbankan stabilitas sistem.**
+
+2. Sebutkan 4 kategori system call yang umum digunakan.   
+   **Jawaban:**
+   **1. Kontrol Proses (Process Control)**
+
+   **2. Manajemen Berkas (File Management)**
+
+   **3. Manajemen Perangkat (Device Management)**
+
+   **4. Informasi dan Komunikasi (Information & Communication)**
+
+3. Mengapa system call tidak bisa dipanggil langsung oleh user program?  
+   **Jawaban:** 
+   **System call tidak bisa dipanggil langsung oleh user program karena alasan utama yang berkaitan dengan keamanan, stabilitas sistem, dan privilese prosesor.**
+ 
 ---
 
 ## Refleksi Diri
 Tuliskan secara singkat:
-- Apa bagian yang paling menantang minggu ini?  
-- Bagaimana cara Anda mengatasinya?  
+- Apa bagian yang paling menantang minggu ini?
+
+   **Kesusahan menginstal Linux karena setiap kali akan mengetik perintah selalu langsung keluar dari Linux tersebut.**  
+- Bagaimana cara Anda mengatasinya?
+  **menggunakan Cloud Shell: https://shell.cloud.google.com/**  
 
 ---
 
