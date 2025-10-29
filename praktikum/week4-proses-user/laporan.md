@@ -216,6 +216,7 @@ Amati hierarki proses dan identifikasi proses induk (`init`/`systemd`).
 
 2. Gambarkan hierarki proses dalam bentuk diagram pohon (pstree) di laporan.
 
+```bash
 ramadhanfatkhurrohman@cloudshell:~$ pstree -p | head -20
 bash(1)-+-dockerd(209)-+-containerd(243)-+-{containerd}(251)
         |              |                 |-{containerd}(252)
@@ -238,6 +239,7 @@ bash(1)-+-dockerd(209)-+-containerd(243)-+-{containerd}(251)
         |            |                   |                                    |            |-bash(2383)
         |            |                   |                                    |            |-bash(2867)
 
+```
 
 3. Jelaskan hubungan antara user management dan keamanan sistem Linux.
 
