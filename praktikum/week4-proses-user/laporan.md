@@ -281,7 +281,7 @@ Tuliskan secara singkat:
 
 - Bagaimana cara Anda mengatasinya?  
 
-   * Mencari tau letak errornya dimana, serta menjalankan  eksperimen menggunakan cloud shell karena tidak bisa mengoperasikan ubuntu atau wsl.
+   * Mencari tau letak errornya dimana, serta menjalankan  eksperimen menggunakan cloud shell karena tidak bisa mengoperasikan ubuntu atau wsl. 
 
 ---
 
