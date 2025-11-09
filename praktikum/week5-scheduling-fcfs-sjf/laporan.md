@@ -163,6 +163,23 @@ Urutkan proses berdasarkan Burst Time terpendek (dengan memperhatikan waktu keda
 3. Keterbatasan Implementasi: Meskipun SJF optimal secara waktu, dalam praktiknya SJF memiliki kelemahan serius, yaitu sulit memprediksi Burst Time secara akurat dan memiliki risiko starvation, di mana proses yang sangat panjang bisa tertunda tanpa batas waktu.
 
 ---
+## Tugas
+### Skenario 1
+![Screenshot hasil](./screenshots/Skenario%201%20FCFS-SJF.png)
+### Perbandingan hasil
+   | Algoritma | Avg Waiting Time | Avg Turnaround Time | Kelebihan | Kekurangan |
+   |------------|------------------|----------------------|------------|-------------|
+   | FCFS | 6 | 11,5 | Sederhana dan mudah diterapkan | Tidak efisien untuk proses panjang |
+   | SJF | 5,25 | 10,75 | Optimal untuk job pendek | Menyebabkan *starvation* pada job panjang |
+### Skenario 2
+![Screenshot hasil](./screenshots/Skenario%202%20FCFS-SJF.png)
+### Perbandingan Hasil
+   | Algoritma | Avg Waiting Time | Avg Turnaround Time | Kelebihan | Kekurangan |
+   |------------|------------------|----------------------|------------|-------------|
+   | FCFS | 7,5 | 13,5 | Sederhana dan mudah diterapkan | Tidak efisien untuk proses panjang |
+   | SJF | 5,5 | 11,5 | Optimal untuk job pendek | Menyebabkan *starvation* pada job panjang |
+
+---
 
 ## Quiz
 1. Apa perbedaan utama antara FCFS dan SJF?  
