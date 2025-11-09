@@ -128,6 +128,12 @@ Sertakan screenshot hasil percobaan atau diagram:
 
 ![Screenshot hasil](./screenshots/Eksperimen%202%20Priority%20Scheduling.png)
 
+- Gantt Chart
+```bash
+| P1 | P2 | P4 | P3 |
+0    5    8   14   22 
+```
+
 ---
 
 ## Tabel Perbandingan
