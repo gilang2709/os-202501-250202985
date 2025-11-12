@@ -140,7 +140,7 @@ Sertakan screenshot hasil percobaan atau diagram:
 
 | Algoritma | Avg Waiting Time | Avg Turnaround Time | Kelebihan | Kekurangan |
 |------------|------------------|----------------------|------------|-------------|
-| RR | 11,75 | 12,5 | Adil terhadap semua proses | Tidak efisien jika quantum tidak tepat |
+| RR | 8,5 | 14 | Adil terhadap semua proses | Tidak efisien jika quantum tidak tepat |
 | Priority | 5,25 | 10,75 | Efisien untuk proses penting | Potensi *starvation* pada prioritas rendah |
 
 ---
