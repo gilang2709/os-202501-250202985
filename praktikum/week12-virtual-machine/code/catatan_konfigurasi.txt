@@ -1,0 +1,60 @@
+===========================================================
+CATATAN KONFIGURASINYA VIRTUAL MACHINE (MINGGU 12)
+===========================================================
+Nama Anggota : 
+1. Gradyan Alannahda Shofari
+2. Fathkurrohman Gilang Ramadhan
+Kelas        : 1IKRB
+===========================================================
+
+[1] SPESIFIKASI SOFTWARE
+-----------------------------------------------------------
+Hypervisor   : Oracle VM VirtualBox 7.0
+Guest OS ISO : Ubuntu 24.04 LTS (Desktop)
+Host OS      : Windows 10/11 (64-bit)
+
+[2] KONFIGURASI VM (FINAL / OPTIMAL)
+-----------------------------------------------------------
+General:
+  - Name       : Ubuntu_Lab_VM
+  - Type       : Linux
+  - Version    : Ubuntu (64-bit)
+
+System:
+  - Base Memory (RAM) : 4096 MB (4 GB)
+  - Processor (CPU)   : 2 CPU Core
+  - Execution Cap     : 100%
+  - Boot Order        : Hard Disk, Optical
+  - Chipset           : PIIX3 / ICH9
+  - TPM               : None (v2.0 not required for Ubuntu)
+
+Display:
+  - Video Memory      : 128 MB
+  - Graphics Control  : VMSVGA (Default for Linux)
+  - Acceleration      : 3D Acceleration Enabled
+
+Storage:
+  - Controller        : SATA
+  - Virtual Hard Disk : 25.00 GB
+  - Attribute         : Dynamically allocated (VDI)
+
+Network:
+  - Adapter 1         : NAT (Attached to)
+                        *Digunakan agar VM mendapat akses internet dari Host*
+
+[3] SKENARIO PENGUJIAN (STRESS TEST)
+-----------------------------------------------------------
+Konfigurasi Low Resource:
+  - RAM dikurangi menjadi : 2048 MB (2 GB)
+  - CPU dikurangi menjadi : 1 Core
+
+Hasil Pengamatan:
+  - Pada RAM 2GB, Swap memory mulai terpakai saat membuka Firefox.
+  - Sistem mengalami stuttering (lag) signifikan.
+
+[4] COMMAND PENTING
+-----------------------------------------------------------
+Cek Versi Kernel : uname -a
+Cek RAM          : free -h
+Cek CPU          : lscpu
+Update Repo      : sudo apt update

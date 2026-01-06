@@ -1,26 +1,32 @@
 
-# Laporan Praktikum Minggu [X]
+# Laporan Praktikum Minggu 13
 Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
 
 ---
 
 ## Identitas
-- **Nama**  : [Nama Mahasiswa]  
-- **NIM**   : [NIM Mahasiswa]  
-- **Kelas** : [Kelas]
+- **Nama**  : Fatkhurrohman Gilang Ramadhan 
+- **NIM**   : 250202985
+- **Kelas** : 1 IKRB
 
 ---
 
 ## Tujuan
-Tuliskan tujuan praktikum minggu ini.  
-Contoh:  
-> Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
-
+1. Menulis Dockerfile sederhana untuk sebuah aplikasi/skrip.
+2. Membangun image dan menjalankan container.
+3. Menjalankan container dengan pembatasan **CPU** dan **memori**.
+4. Mengamati dan menjelaskan perbedaan eksekusi container dengan dan tanpa limit resource.
+5. Menyusun laporan praktikum secara runtut dan sistematis.
 ---
 
 ## Dasar Teori
-Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
+1. Containerization & Docker: Docker menggunakan virtualisasi tingkat sistem operasi. Berbeda dengan Virtual Machine (VM) yang meniru perangkat keras, container berbagi kernel host yang sama namun berjalan di ruang pengguna (userspace) yang terisolasi.
 
+2. Control Groups (cgroups): Ini adalah fitur kernel Linux yang memungkinkan Docker membatasi, mengukur, dan mengisolasi penggunaan sumber daya (CPU, memori, I/O disk) dari kumpulan proses. cgroups memastikan satu container tidak menghabiskan seluruh sumber daya host.
+
+3. Namespaces: Fitur kernel yang memisahkan view sistem (seperti Process ID, Network, Mount point) sehingga container merasa berjalan sendiri di sistem operasi, padahal berbagi kernel yang sama.
+
+4. OOM Killer (Out of Memory): Mekanisme perlindungan kernel. Jika container mencoba menggunakan memori melebihi batas yang ditentukan (--memory), kernel akan mematikan proses di dalam container tersebut untuk menjaga stabilitas sistem.
 ---
 
 ## Langkah Praktikum
